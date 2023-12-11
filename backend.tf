@@ -1,8 +1,8 @@
 terraform {
   backend "s3"{
-    bucket                 = "mundose22"
+    bucket                 = "darwins3"
     region                 = "us-east-1"
-    key                    = "backend.tfstate"
+    key                    = "devops/backend.tfstate"
     dynamodb_table         = "terraformstatelock"
   }
 }
